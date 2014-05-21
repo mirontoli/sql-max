@@ -37,6 +37,12 @@ Before you do it for the first time, make sure you don't have a branch gh-pages.
 ### DNS
 The SQL Max web app will be accessible at http://sqlmax.chuvash.eu. The DNS is configured with Github Pages and and an additional file [CNAME](https://help.github.com/articles/setting-up-a-custom-domain-with-github-pages)
 
+### Mobile optimization
+The web app is optimized for mobiles. Here are two references that have been used:
+
+- [Optimizing Mobile Web Apps for iOS](http://blog.teamtreehouse.com/optimizing-mobile-web-apps-ios)
+- [iOS7 Web App Gist (by tfausak)](https://gist.github.com/tfausak/2222823)
+
 ### Authors and Contributors
 - Anatoly Mironov (@mirontoli)
 
