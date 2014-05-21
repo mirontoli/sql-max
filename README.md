@@ -9,7 +9,7 @@ The idea is from Vlad Catrinescu. What we do is a fast and accessible web app.
 Formula for this calculator is described on the [codeplex project site for the original utility](https://sqlmem.codeplex.com/) in text, and even [expressed in C#](https://sqlmem.codeplex.com/SourceControl/latest#Form1.cs)
 
 ```
-**SQL Max Memory** = TotalPhyMem - (NumOfSQLThreads * ThreadStackSize) - (1GB * CEILING(NumOfCores/4)) - OS Reserved 
+SQL Max Memory = TotalPhyMem - (NumOfSQLThreads * ThreadStackSize) - (1GB * CEILING(NumOfCores/4)) - OS Reserved 
 
 
 NumOfSQLThreads = 256 + (NumOfProcessors*- 4) * 8 (* If NumOfProcessors > 4, else 0) 
@@ -19,6 +19,35 @@ ThreadStackSize = 2MB on x64 or 4 MB on 64-bit (IA64)
 
 
 OS Reserved = 20% of total ram for under if system has 15GB. 12.5% for over 20GB
+```
+
+This is the javascript representation of the algorythm:
+
+```javascript
+//everything in MB
+var oneGb = 1024; //MB
+
+// "hard coded" options
+var architecture = "x64";
+var totalram = parseInt("8GB") * oneGb;
+var corenumber = 4;
+var otherApps = 0;
+
+
+//thread stack sizes in MB
+var threadStackSizes = { "x86": 1, "x64": 2, "IA64": 4 };
+
+var threadStackSize = threadStackSizes[architecture];
+
+var osReservedPart = totalram < (20 * oneGb) ? 0.2 : 0.125;
+var forOS = totalram * osReservedPart;
+var coretemp = corenumber > 4 ? 0 : corenumber;
+var sqlThreads = 256 + (coretemp - 4) * 8;
+var temp = corenumber / 4;
+
+var maxMemory = (totalram - forOS - otherApps 
+         - (sqlThreads * threadStackSize)
+         - (1024 * Math.ceil(temp)));
 ```
 
 ### Hosting
