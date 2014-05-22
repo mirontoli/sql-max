@@ -50,6 +50,21 @@ var maxMemory = (totalram - forOS - otherApps
          - (1024 * Math.ceil(temp)));
 ```
 
+### Building and developing
+
+To build the project you must have nodejs, grunt, and npm.
+
+```
+npm install
+grunt build
+```
+
+Alternatively, if you want to run it locally with a dev server.
+
+```
+grunt server
+```
+
 ### Hosting
 
 The web apps is hosted on [Github Pages](https://help.github.com/articles/what-are-github-pages)
