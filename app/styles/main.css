@@ -6,3 +6,7 @@
 .result-box .result {
 	font-size: 2rem;
 }
+
+.contributor {
+	display: inline-block;
+}
