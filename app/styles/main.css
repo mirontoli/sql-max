@@ -1,0 +1,8 @@
+.result-box {
+	padding: 20px 10px;
+	background: beige;
+	text-align: center;
+}
+.result-box > div:first-child {
+	font-size: 2rem;
+}

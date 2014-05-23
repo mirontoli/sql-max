@@ -64,6 +64,7 @@ Alternatively, if you want to run it locally with a dev server.
 ```
 grunt server
 ```
+This will give you a livereload functionality where you can update the source code and see the changes directly in your browser without needing to reload the page.
 
 ### Hosting
 
