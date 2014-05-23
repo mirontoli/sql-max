@@ -27,42 +27,56 @@
   </head>
 
   <body>
-    <h1>SQL Max Memory Calculator</h1>
-    <div>Here you can calculate SQL Max Memory. You have to limit the RAM the SQL Server can consume to provide a better performance for your applications, among them SharePoint. Find information about <a href="#contributors">contributors</a> below</div>
+    <div class="page-title">
+      <h1>SQL Max Memory Calculator</h1>
+    </div>
+    <div class="description">
+      Here you can calculate SQL Max Memory. You have to limit the RAM the SQL Server can consume to provide a better performance for your applications, among them SharePoint.
+    </div>
+    <div class="read-more">
+      Find information about <a href="#contributors">contributors</a> below
+    </div>
     <section class="result-box">
       <div><span id="result">&nbsp;</span> MB</div>
       <div>Max Memory</div>
     </section>
     <section id="calculator">
-      <label>Server Total Ram: <input type="number" value="8"> GB</label>
-      <br>
-      <label>How Many Cores? <input type="number" value="4"></label>
-      <br>
-      <label>Architecture 
-      <select>
-        <option value="x86">x86</option><option value="x64" selected="selected">x64</option><option value="IA64">IA64</option>
-      </select>
-      </label>
-      <br>
-      <label>Other Apps RAM: <input type="number" value="4"> MB </label>
+      <div class="calculator-inputs">
+        <label>Server Total Ram: <input type="number" value="8"> GB</label>
+        <br>
+        <label>How Many Cores? <input type="number" value="4"></label>
+        <br>
+        <label>Architecture 
+        <select>
+          <option value="x86">x86</option><option value="x64" selected="selected">x64</option><option value="IA64">IA64</option>
+        </select>
+        </label>
+        <br>
+        <label>Other Apps RAM: <input type="number" value="4"> MB </label>
+      </div>
     </section>
     <section id="explanation">
     </section>
     <section id="contributors">
       <h2>Contributors</h2>
-      <div>
+      <div class="contributor">
         Anatoly Mironov
         <br>
         <img src="http://gravatar.com/avatar/6d52d4ee75d92583bfde4a1854090495?s=200" alt="Anatoly's gravatar">
       </div>
-      <div>
+      <div class="contributor">
         Erik Kronberg
         <br>
         <img src="http://gravatar.com/avatar/c60fb228899ac18f6f949618b1ccd808?s=200" alt="Erik Kronberg's gravatar">
       </div>
+      <div class="contributor">
+        Johannes Milling
+        <br>
+        <img src="http://www.gravatar.com/avatar/4510ec91aa443bda0efa2e62d9c89332.png?s=200" alt="Johannes Milling's gravatar">
+      </div>
     </section>
-    <section>
-SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
+    <section id="additional-info">
+      SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
     </section>
 
     <footer>
