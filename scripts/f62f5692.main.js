@@ -1,0 +1,1 @@
+"use strict";!function(){var a={result:document.getElementById("result")};a.result.innerText="XXX"}();
