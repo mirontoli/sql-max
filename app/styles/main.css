@@ -1,3 +1,4 @@
+
 .result-box {
 	padding: 20px 10px;
 	background: beige;
@@ -10,3 +11,9 @@
 .contributor {
 	display: inline-block;
 }
+
+/* prevent auto zoom 
+http://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone/6394497#6394497
+
+*/
+input,textarea {font-size:16px;}

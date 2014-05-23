@@ -23,7 +23,7 @@
     <!-- Prevent text size adjustment on orientation change. -->
     <style>html { -webkit-text-size-adjust: 100%; }</style>
 
-    <link rel="stylesheet" href="styles/12421a54.main.css"/>
+    <link rel="stylesheet" href="styles/747e32ca.main.css"/>
   </head>
 
   <body>
@@ -34,7 +34,7 @@
       Here you can calculate SQL Max Memory. You have to limit the RAM the SQL Server can consume to provide a better performance for your applications, among them SharePoint.
     </div>
     <div class="read-more">
-      Find information about <a href="#contributors">contributors</a> below
+      Find information about <a href="#contributors">contributors</a> and instructions about <a href="#howtosetmemory">how to set the Max Memory In SQL Server</a> below
     </div>
     <section id="calculator">
       <div class="result-box">
@@ -78,13 +78,20 @@
     <section id="additional-info">
       SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
     </section>
+    <section id="howtosetmemory">
+      <h2>To set a fixed amount of memory</h2>
+      <div>Here is the instruction how to set the memory, source: <a href="http://technet.microsoft.com/en-us/library/ms191144(v=sql.105).aspx">technet</a></div>
+      <blockquote>
+        <ol><li><p>In Object Explorer, right-click a server and select <span class="label">Properties</span>.</p></li><li><p>Click the <span class="label">Memory</span> node.</p></li><li><p>Under <span class="label">Server Memory Options</span>, enter the amount that you want for <span class="label">Minimum server memory</span> and <span class="label">Maximum server memory</span>.</p><p>Use the default settings to allow SQL Server&nbsp;to change its memory requirements dynamically based on available system resources. The default setting for <span class="label">min server memory</span> is 0, and the default setting for <span class="label">max server memory</span> is 2147483647&nbsp;megabytes (MB). The minimum amount of memory you can specify for <span class="label">max server memory</span> is 16&nbsp;MB.</p></li></ol>
+      </blockquote>
+    </section>
 
     <footer>
       SQL Max Memory Calculator web app is maintained by <a href="https://twitter.com/mirontoli">@mirontoli</a><br>
       The source code is licensed by MIT license and freely available at <a href="http://github.com/mirontoli/sql-max">Github</a>.
     </footer>
 
-    <script src="scripts/c26fe9c4.main.js"></script>
+    <script src="scripts/0ef25a65.main.js"></script>
 
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
