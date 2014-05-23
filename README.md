@@ -88,8 +88,8 @@ The web app is optimized for mobiles. Here are two references that have been use
 - [iOS7 Web App Gist (by tfausak)](https://gist.github.com/tfausak/2222823)
 
 ### Authors and Contributors
-- [Anatoly Mironov](/mirontoli) (@mirontoli)
-- [Erik Kronberg](/eakron) (@eakron)
+- [Anatoly Mironov](https://github.com/mirontoli) (@mirontoli)
+- [Erik Kronberg](https://github.com/eakron) (@eakron)
 
 ### License
 The SQL MAX web app is licensed with the [MIT License](LICENSE).
