@@ -3,6 +3,10 @@
 	background: beige;
 	text-align: center;
 }
-.result-box > div:first-child {
+.result-box .result {
 	font-size: 2rem;
+}
+
+.contributor {
+	display: inline-block;
 }
