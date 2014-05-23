@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="header">
+    <div class="page-title">
       <h1>SQL Max Memory Calculator</h1>
     </div>
     <div class="description">
@@ -43,17 +43,19 @@
       <div>Max Memory</div>
     </section>
     <section id="calculator">
-      <label>Server Total Ram: <input type="number" value="8"> GB</label>
-      <br>
-      <label>How Many Cores? <input type="number" value="4"></label>
-      <br>
-      <label>Architecture 
-      <select>
-        <option value="x86">x86</option><option value="x64" selected>x64</option><option value="IA64">IA64</option>
-      </select>
-      </label>
-      <br>
-      <label>Other Apps RAM: <input type="number" value="4"> MB </label>
+      <div class="calculator-inputs">
+        <label>Server Total Ram: <input type="number" value="8"> GB</label>
+        <br>
+        <label>How Many Cores? <input type="number" value="4"></label>
+        <br>
+        <label>Architecture 
+        <select>
+          <option value="x86">x86</option><option value="x64" selected>x64</option><option value="IA64">IA64</option>
+        </select>
+        </label>
+        <br>
+        <label>Other Apps RAM: <input type="number" value="4"> MB </label>
+      </div>
     </section>
     <section id="explanation">
     </section>
@@ -75,8 +77,8 @@
         <img src="http://www.gravatar.com/avatar/4510ec91aa443bda0efa2e62d9c89332.png?s=200" alt="Johannes Milling's gravatar">
       </div>
     </section>
-    <section>
-SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
+    <section id="additional-info">
+      SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
     </section>
 
     <footer>
