@@ -40,21 +40,21 @@
     </div>
     <section id="calculator">
       <div class="result-box">
-        <div><span class="result">&nbsp;</span> MB</div>
+        <div><span id="result">5013.6</span> MB</div>
         <div>Max Memory</div>
       </div>
       <div class="calculator-inputs">
-        <label>Server Total Ram: <input type="number" value="8"> GB</label>
+        <label>Server Total Ram: <input type="number" value="8" id="totalram"> GB</label>
         <br>
-        <label>How Many Cores? <input type="number" value="4"></label>
+        <label>How Many Cores? <input type="number" value="4" id="cores"></label>
         <br>
         <label>Architecture 
-        <select>
+        <select id="architecture">
           <option value="x86">x86</option><option value="x64" selected>x64</option><option value="IA64">IA64</option>
         </select>
         </label>
         <br>
-        <label>Other Apps RAM: <input type="number" value="4"> MB </label>
+        <label>Other Apps RAM: <input type="number" value="4" id="otherram"> MB </label>
       </div>
     </section>
     <section id="explanation">
