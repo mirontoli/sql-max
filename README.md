@@ -1,9 +1,24 @@
 # SQL Server Max Memory Calculator
 
+SQL Max, SQL Server Max Memory Calculator, available at ([sqlmax.chuvash.eu](http://sqlmax.chuvash.eu)), is a simple, nevertheless, a very powerful web application for calculating max memory for SQL Server. If you don't set the max memory, the SQL Server will occupy almost all of your server's RAM. 
+
+SQL Max is optimized for mobiles and can be used even when you are offline, even though it works perfectly in a desktop browser. 
 
 ### Idea
 
-The idea is from Vlad Catrinescu. What we do is a fast and accessible web app.
+The original idea of a tool for calculating the SQL Server Max Memory comes from [Vlad Catrinescu](http://about.me/vladcatrinescu), SharePoint MVP, who wrote a very popular whitepaper SQL Server Performance in a SharePoint Environment:
+- [Free Whitepaper: Maximizing SQL 2012 Performance for SharePoint 2013 Whitepaper](http://sharepoint-community.net/profiles/blogs/free-whitepaper-maximizing-sql-2012-performance-for-sharepoint-20)
+
+Despite of the formula (see below) in the whitepaper, Vlad Catrinescu also provided a tool for calculating max memory, a windows forms application that is freely downlodable at [sqlmem.codeplex.com](http://sqlmem.codeplex.com)
+
+Our project is to take this idea a step further and make it available directly in your browser, on desktop at work, or on the go in your mobile. This mobile web app will also be available for offline access. Simply put, why should you dowload a zip file, extract and run the .exe file? Perhaps you cannot run executable files due restrictions, or perhaps you are not running Windows at all. 
+
+### Design principles
+
+There are a few design principles that are important in the development of the SQL Max:
+- Accurate calculations achieved through automatic tests while developing
+- Mobile first.
+- ...
 
 ### Formula
 Formula for this calculator is described on the [codeplex project site for the original utility](https://sqlmem.codeplex.com/) in text, and even [expressed in C#](https://sqlmem.codeplex.com/SourceControl/latest#Form1.cs)
@@ -87,6 +102,9 @@ The web app is optimized for mobiles. Here are two references that have been use
 
 - [Optimizing Mobile Web Apps for iOS](http://blog.teamtreehouse.com/optimizing-mobile-web-apps-ios)
 - [iOS7 Web App Gist (by tfausak)](https://gist.github.com/tfausak/2222823)
+
+### Automatic tests
+...
 
 ### Authors and Contributors
 - [Anatoly Mironov](https://github.com/mirontoli) (@mirontoli)
