@@ -92,6 +92,7 @@ The web app is optimized for mobiles. Here are two references that have been use
 - [Anatoly Mironov](https://github.com/mirontoli) (@mirontoli)
 - [Erik Kronberg](https://github.com/eakron) (@eakron)
 - [Johannes Milling](https://github.com/Johesmil) (@johesmil)
+- [Björn Roberg](https://github.com/roobie) (@johesmil)
 
 ### License
 The SQL MAX web app is licensed with the [MIT License](LICENSE).
