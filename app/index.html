@@ -32,12 +32,17 @@
     <div class="page-title">
       <h1>SQL Max Memory Calculator</h1>
     </div>
+    <section id="additional-info">
+      SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
+    </section>
+	</br>
     <div class="description">
       Here you can calculate SQL Max Memory. You have to limit the RAM the SQL Server can consume to provide a better performance for your applications, among them SharePoint.
     </div>
+	</br>
     <div class="read-more">
       Find information about <a href="#contributors">contributors</a> and instructions about <a href="#howtosetmemory">how to set the Max Memory In SQL Server</a> below
-    </div>
+    </div>	
     <section id="calculator">
       <div class="result-box">
         <div><span id="result">5013.6</span> MB</div>
@@ -58,6 +63,13 @@
       </div>
     </section>
     <section id="explanation">
+    </section>	
+    <section id="howtosetmemory">
+      <h2>To set a fixed amount of memory</h2>
+      <div>Here is the instruction how to set the memory, source: <a href="http://technet.microsoft.com/en-us/library/ms191144(v=sql.105).aspx">technet</a></div>
+      <blockquote>
+        <ol><li><p>In Object Explorer, right-click a server and select <span class="label">Properties</span>.</p></li><li><p>Click the <span class="label">Memory</span> node.</p></li><li><p>Under <span class="label">Server Memory Options</span>, enter the amount that you want for <span class="label">Minimum server memory</span> and <span class="label">Maximum server memory</span>.</p><p>Use the default settings to allow SQL Server&nbsp;to change its memory requirements dynamically based on available system resources. The default setting for <span class="label">min server memory</span> is 0, and the default setting for <span class="label">max server memory</span> is 2147483647&nbsp;megabytes (MB). The minimum amount of memory you can specify for <span class="label">max server memory</span> is 16&nbsp;MB.</p></li></ol>
+      </blockquote>
     </section>
     <section id="contributors">
       <h2>Contributors</h2>
@@ -81,16 +93,6 @@
         <br>
         <img src="https://avatars1.githubusercontent.com/u/458243?s=100" alt="Björn Roberg's gravatar">
       </div>      
-    </section>
-    <section id="additional-info">
-      SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
-    </section>
-    <section id="howtosetmemory">
-      <h2>To set a fixed amount of memory</h2>
-      <div>Here is the instruction how to set the memory, source: <a href="http://technet.microsoft.com/en-us/library/ms191144(v=sql.105).aspx">technet</a></div>
-      <blockquote>
-        <ol><li><p>In Object Explorer, right-click a server and select <span class="label">Properties</span>.</p></li><li><p>Click the <span class="label">Memory</span> node.</p></li><li><p>Under <span class="label">Server Memory Options</span>, enter the amount that you want for <span class="label">Minimum server memory</span> and <span class="label">Maximum server memory</span>.</p><p>Use the default settings to allow SQL Server&nbsp;to change its memory requirements dynamically based on available system resources. The default setting for <span class="label">min server memory</span> is 0, and the default setting for <span class="label">max server memory</span> is 2147483647&nbsp;megabytes (MB). The minimum amount of memory you can specify for <span class="label">max server memory</span> is 16&nbsp;MB.</p></li></ol>
-      </blockquote>
     </section>
 
     <footer>

@@ -1,6 +1,17 @@
+* {
+  font-family: "Segoe UI Light", Tahoma Light, Arial Light;
+}
+
+a {
+}
+
+a:hover {
+
+}
 
 .result-box {
 	padding: 20px 10px;
+	margin: 10px 0;
 	background: beige;
 	text-align: center;
 }
