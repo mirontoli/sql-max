@@ -18,6 +18,7 @@ Our project is to take this idea a step further and make it available directly i
 There are a few design principles that are important in the development of the SQL Max:
 - Accurate calculations achieved through automatic tests while developing
 - Mobile first.
+- Performance is very important. Avoid downloading external fonts and icons. Use web safe fonts
 - ...
 
 ### Formula
