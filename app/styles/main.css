@@ -2,20 +2,76 @@
   font-family: Verdana;
 }
 
-a {
+h1, h2, h3 {
+  font-family: Verdana;
 }
 
-a:hover {
+a {
+  color: #007acc;
+}
 
+body {
+  color: #555;
+  padding: 0;
+  margin: 0;
+}
+
+#suite-bar {
+  display: inline-block;
+  width: 100%;
+  background: #007acc;
+  color: #fff;
+}
+
+.logo {
+  width: 50px;
+  display: inline-block;
+}
+
+.page-title {
+  font-size: 12px;
+  display: inline-block;
+}
+
+.wrapper {
+  max-width: 500px;
+  margin: 10px auto;
+}
+
+.calculator-inputs {
+  display: table;
+  width: 100%;
+}
+
+.calculator-input {
+  display: table-row;
+}
+
+.calculator-input span {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.calculator-input input,
+.calculator-input select {
+  display: table-cell;
+  margin-bottom: 5px;
 }
 
 .result-box {
-	padding: 20px 10px;
-	margin: 10px 0;
-	background: beige;
-	text-align: center;
+  padding: 20px 10px;
+  margin: 10px 0;
+  background: #007acc;
+  color: white;
+  text-align: center;
+  border: 3px solid #fff;
 }
-.result-box .result {
+
+.result-box:hover {
+  border: 3px solid lightgray;
+}
+
+.result-box #result {
 	font-size: 2rem;
 }
 
