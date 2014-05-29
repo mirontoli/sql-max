@@ -29,90 +29,98 @@
   </head>
 
   <body>
-    <div class="page-title">
-      <h1>SQL Max Memory Calculator</h1>
-    </div>
-    <section id="additional-info">
-      SQL Max Memory Calculator will be available soon. While waiting the <a href="https://sqlmem.codeplex.com/">Windows app</a> created by <a href="https://twitter.com/vladcatrinescu">Vlad Catrinescu</a>
-    </section>
-	</br>
-    <div class="description">
-      Here you can calculate SQL Max Memory. You have to limit the RAM the SQL Server can consume to provide a better performance for your applications, among them SharePoint.
-    </div>
-	</br>
-    <div class="read-more">
-      Find information about <a href="#contributors">contributors</a> and instructions about <a href="#howtosetmemory">how to set the Max Memory In SQL Server</a> below
-    </div>	
-    <section id="calculator">
-      <div class="result-box">
-        <div><span id="result">5013.6</span> MB</div>
-        <div>Max Memory</div>
-      </div>
-      <div class="calculator-inputs">
-        <label>Server Total Ram: <input type="number" value="8" id="totalram"> GB</label>
-        <br>
-        <label>How Many Cores? <input type="number" value="4" id="cores"></label>
-        <br>
-        <label>Architecture
-        <select id="architecture">
-          <option value="x86">x86</option><option value="x64" selected>x64</option><option value="IA64">IA64</option>
-        </select>
-        </label>
-        <br>
-        <label>Other Apps RAM: <input type="number" value="4" id="otherram"> MB </label>
-      </div>
-    </section>
-    <section id="explanation">
-    </section>	
-    <section id="howtosetmemory">
-      <h2>To set a fixed amount of memory</h2>
-      <div>Here is the instruction how to set the memory, source: <a href="http://technet.microsoft.com/en-us/library/ms191144(v=sql.105).aspx">technet</a></div>
-      <blockquote>
-        <ol><li><p>In Object Explorer, right-click a server and select <span class="label">Properties</span>.</p></li><li><p>Click the <span class="label">Memory</span> node.</p></li><li><p>Under <span class="label">Server Memory Options</span>, enter the amount that you want for <span class="label">Minimum server memory</span> and <span class="label">Maximum server memory</span>.</p><p>Use the default settings to allow SQL Server&nbsp;to change its memory requirements dynamically based on available system resources. The default setting for <span class="label">min server memory</span> is 0, and the default setting for <span class="label">max server memory</span> is 2147483647&nbsp;megabytes (MB). The minimum amount of memory you can specify for <span class="label">max server memory</span> is 16&nbsp;MB.</p></li></ol>
-      </blockquote>
-    </section>
-    <section id="contributors">
-      <h2>Contributors</h2>
-      <div class="contributor">
-        Anatoly Mironov
-        <br>
-        <img src="http://gravatar.com/avatar/6d52d4ee75d92583bfde4a1854090495?s=100" alt="Anatoly's gravatar">
-      </div>
-      <div class="contributor">
-        Erik Kronberg
-        <br>
-        <img src="http://gravatar.com/avatar/c60fb228899ac18f6f949618b1ccd808?s=100" alt="Erik Kronberg's gravatar">
-      </div>
-      <div class="contributor">
-        Johannes Milling
-        <br>
-        <img src="http://www.gravatar.com/avatar/4510ec91aa443bda0efa2e62d9c89332.png?s=100" alt="Johannes Milling's gravatar">
-      </div>
-      <div class="contributor">
-        Björn Roberg
-        <br>
-        <img src="https://avatars1.githubusercontent.com/u/458243?s=100" alt="Björn Roberg's gravatar">
-      </div>      
-    </section>
+   <section id="suite-bar">
+     <div class="logo"><img src=""></img></div>
+     <div class="page-title"><h1>SQL Max Memory Calculator</h1></div>
+   </section>
+   <div class="wrapper">
+	<section id="summary">
+	  Calculate how much RAM you should dedicate to all the SQL instances on your server. Want to know how it works? <a href="#description">Read more...</a>
+	</section>
+	<section id="calculator">
+		<div class="result-box">
+		  <div><span id="result">5013.6</span> MB</div>
+		  <div>Max Memory</div>
+		</div>
+	  <div class="calculator-inputs">	  
+		<div class="calculator-input">
+		  <span>Total Ram on Server (GB): </span>
+		  <input type="number" value="8" id="totalram">
+		</div>
+		<div class="calculator-input">
+		  <span>Number of Cores: </span>
+		  <input type="number" value="4" id="cores">
+		</div>		
+		<div class="calculator-input">
+		  <span>Architecture: </span>
+		  <select id="architecture">
+			<option value="x86">x86</option><option value="x64" selected>x64</option><option value="IA64">IA64</option>
+		  </select>
+		</div>
+		<div class="calculator-input">
+		  <span>Other Apps RAM (MB): </span>
+		  <input type="number" value="4" id="otherram">
+		</div>
+	  </div>
+	</section>
+	<section id="description">	
+	  <h2>About the calculator</h2>
+	  This is how it works...
+	  </br>
+	  The formula...
+	  </br>
+	  Check out our <a href="#contributors">contributors</a>!
+	</section>	
+	<section id="howtosetmemory">
+	  <h2>How to set a fixed amount of memory</h2>
+	  <div>Here is the instruction how to set the memory, source: <a href="http://technet.microsoft.com/en-us/library/ms191144(v=sql.105).aspx">technet</a></div>
+	  <blockquote>
+		<ol><li><p>In Object Explorer, right-click a server and select <span class="label">Properties</span>.</p></li><li><p>Click the <span class="label">Memory</span> node.</p></li><li><p>Under <span class="label">Server Memory Options</span>, enter the amount that you want for <span class="label">Minimum server memory</span> and <span class="label">Maximum server memory</span>.</p><p>Use the default settings to allow SQL Server&nbsp;to change its memory requirements dynamically based on available system resources. The default setting for <span class="label">min server memory</span> is 0, and the default setting for <span class="label">max server memory</span> is 2147483647&nbsp;megabytes (MB). The minimum amount of memory you can specify for <span class="label">max server memory</span> is 16&nbsp;MB.</p></li></ol>
+	  </blockquote>
+	</section>
+	<section id="contributors">
+	  <h2>Contributors</h2>
+	  <div class="contributor">
+		Anatoly Mironov
+		<br>
+		<img src="http://gravatar.com/avatar/6d52d4ee75d92583bfde4a1854090495?s=100" alt="Anatoly's gravatar">
+	  </div>
+	  <div class="contributor">
+		Erik Kronberg
+		<br>
+		<img src="http://gravatar.com/avatar/c60fb228899ac18f6f949618b1ccd808?s=100" alt="Erik Kronberg's gravatar">
+	  </div>
+	  <div class="contributor">
+		Johannes Milling
+		<br>
+		<img src="http://www.gravatar.com/avatar/4510ec91aa443bda0efa2e62d9c89332.png?s=100" alt="Johannes Milling's gravatar">
+	  </div>
+	  <div class="contributor">
+		Björn Roberg
+		<br>
+		<img src="https://avatars1.githubusercontent.com/u/458243?s=100" alt="Björn Roberg's gravatar">
+	  </div>      
+	</section>
+	
+	<footer>
+	  SQL Max Memory Calculator web app is maintained by <a href="https://twitter.com/mirontoli">@mirontoli</a><br>
+	  The source code is licensed by MIT license and freely available at <a href="http://github.com/mirontoli/sql-max">Github</a>.
+	</footer>
+	
+	<!-- build:js scripts/main.js -->
+	<script src="scripts/main.js"></script>
+	<!-- endbuild -->
 
-    <footer>
-      SQL Max Memory Calculator web app is maintained by <a href="https://twitter.com/mirontoli">@mirontoli</a><br>
-      The source code is licensed by MIT license and freely available at <a href="http://github.com/mirontoli/sql-max">Github</a>.
-    </footer>
-
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-
-    <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-    </script>
-    <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-644315-7");
-      pageTracker._trackPageview();
-      } catch(err) {}
-    </script>
+	<script type="text/javascript">
+	  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	  try {
+	  var pageTracker = _gat._getTracker("UA-644315-7");
+	  pageTracker._trackPageview();
+	  } catch(err) {}
+	</script>	
+   </div>
   </body>
 </html>
