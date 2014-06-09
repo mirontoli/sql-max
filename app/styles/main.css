@@ -18,6 +18,7 @@ body {
 
 #suite-bar {
   display: inline-block;
+  text-align: center;
   width: 100%;
   background: #007acc;
   color: #fff;
