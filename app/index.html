@@ -84,7 +84,7 @@
 
   <body>
    <section id="suite-bar">
-     <div class="logo"><img src=""></img></div>
+     <div class="logo"><img src="images/sql-max-icon.png"></img></div>
      <div class="page-title"><h1>SQL Max Memory Calculator</h1></div>
    </section>
    <div class="wrapper">
@@ -96,7 +96,7 @@
 		  <div><span id="result">5013.6</span> MB</div>
 		  <div>Max Memory</div>
 		</div>
-	  <div class="calculator-inputs">	  
+	  <div class="calculator-inputs">
 		<div class="calculator-input">
 		  <span>Total Ram on Server (GB): </span>
 		  <input type="number" value="8" id="totalram">
@@ -104,7 +104,7 @@
 		<div class="calculator-input">
 		  <span>Number of Cores: </span>
 		  <input type="number" value="4" id="cores">
-		</div>		
+		</div>
 		<div class="calculator-input">
 		  <span>Architecture: </span>
 		  <select id="architecture">
@@ -117,7 +117,7 @@
 		</div>
 	  </div>
 	</section>
-	<section id="description">	
+	<section id="description">
 	  <h2>About the calculator</h2>
 	  <p>The original idea of a tool for calculating the SQL Server Max Memory comes from <a href="http://about.me/vladcatrinescu">Vlad Catrinescu</a>, SharePoint MVP, who wrote a very popular whitepaper SQL Server Performance in a SharePoint Environment:</p>
 	  <ul class="task-list">
@@ -127,19 +127,19 @@
 	  <p>Our project is to take this idea a step further and make it available directly in your browser, on desktop at work, or on the go in your mobile. This mobile web app will also be available for offline access. Simply put, why should you dowload a zip file, extract and run the .exe file? Perhaps you cannot run executable files due restrictions, or perhaps you are not running Windows at all. </p>
 	  <p></p>Check out our <a href="#contributors">contributors</a>!</p>
 	  <h2>Formula</h2>
-	  <code>SQL Max Memory = TotalPhyMem - (NumOfSQLThreads * ThreadStackSize) - (1GB * CEILING(NumOfCores/4)) - OS Reserved 
+	  <code>SQL Max Memory = TotalPhyMem - (NumOfSQLThreads * ThreadStackSize) - (1GB * CEILING(NumOfCores/4)) - OS Reserved
 
 
-NumOfSQLThreads = 256 + (NumOfProcessors*- 4) * 8 (* If NumOfProcessors &gt; 4, else 0) 
+NumOfSQLThreads = 256 + (NumOfProcessors*- 4) * 8 (* If NumOfProcessors &gt; 4, else 0)
 
 
-ThreadStackSize = 2MB on x64 or 4 MB on 64-bit (IA64) 
+ThreadStackSize = 2MB on x64 or 4 MB on 64-bit (IA64)
 
 
 OS Reserved = 20% of total ram for under if system has 15GB. 12.5% for over 20GB
 </code>
-	  
-	</section>	
+
+	</section>
 	<section id="howtosetmemory">
 	  <h2>How to set a fixed amount of memory</h2>
 	  <div>Here is the instruction how to set the memory, source: <a href="http://technet.microsoft.com/en-us/library/ms191144(v=sql.105).aspx">technet</a></div>
@@ -166,7 +166,7 @@ OS Reserved = 20% of total ram for under if system has 15GB. 12.5% for over 20GB
 		Björn Roberg
 		<br>
 		<img src="https://avatars1.githubusercontent.com/u/458243?s=100" alt="Björn Roberg's gravatar">
-	  </div>      
+	  </div>
 	  <div class="contributor">
 		Stina Qvarnström
 		<br>
@@ -177,14 +177,14 @@ OS Reserved = 20% of total ram for under if system has 15GB. 12.5% for over 20GB
 		<br>
 		<img src="http://api.ning.com/files/-SMDs77rw4sp1GnLXX8N6LyVxF*AdWHPxUyjSzM23Cu7LJ4dpUgMK466yNURlouobuj8ZY14-0FYsi8EHwGwj5KbfcXTkSDk/1041486262.jpeg?xgip=0%3A0%3A2201%3A2201%3B%3B&width=100" alt="Vlad Catrinescu's avatar">
 	  </div>
-	  
+
 	</section>
-	
+
 	<footer>
 	  SQL Max Memory Calculator web app is maintained by <a href="https://twitter.com/mirontoli">@mirontoli</a><br>
 	  The source code is licensed by MIT license and freely available at <a href="http://github.com/mirontoli/sql-max">Github</a>.
 	</footer>
-	
+
 	<!-- build:js scripts/main.js -->
 	<script src="scripts/main.js"></script>
 	<!-- endbuild -->
@@ -197,7 +197,7 @@ OS Reserved = 20% of total ram for under if system has 15GB. 12.5% for over 20GB
 	  var pageTracker = _gat._getTracker("UA-644315-7");
 	  pageTracker._trackPageview();
 	  } catch(err) {}
-	</script>	
+	</script>
    </div>
   </body>
 </html>
