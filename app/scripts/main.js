@@ -1,5 +1,5 @@
 'use strict';
-/*var app = */
+
 (function() {
   var elements = {
     result: document.getElementById('result'),
@@ -16,13 +16,12 @@
   };
   function numberWithCommas(x) {
     //http://stackoverflow.com/a/2901298/632117
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
   }
   var calculateMemory = function() {
     //everything in MB
     var oneGb = 1000; //MB
 
-    // "hard coded" options
     var architecture = values.architecture;
     var totalram = parseInt(values.totalram) * oneGb;
     var corenumber = parseInt(values.cores);
@@ -57,6 +56,4 @@
 
   elements.result.innerText = numberWithCommas(calculateMemory());
 })();
-/*
 
- */

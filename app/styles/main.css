@@ -20,13 +20,16 @@ body {
   display: inline-block;
   text-align: center;
   width: 100%;
-  background: #007acc;
+  background: #2a2c2e;
   color: #fff;
 }
 
 .logo {
   width: 50px;
+  height: 45px;
   display: inline-block;
+  float: left;
+  background-image: url(/images/logo.png);
 }
 
 .page-title {
@@ -62,14 +65,9 @@ body {
 .result-box {
   padding: 20px 10px;
   margin: 10px 0;
-  background: #007acc;
+  background: #2a2c2e;
   color: white;
   text-align: center;
-  border: 3px solid #fff;
-}
-
-.result-box:hover {
-  border: 3px solid lightgray;
 }
 
 .result-box #result {
@@ -82,6 +80,8 @@ body {
 
 /* prevent auto zoom 
 http://stackoverflow.com/questions/2989263/disable-auto-zoom-in-input-text-tag-safari-on-iphone/6394497#6394497
-
 */
 input,textarea, select {font-size:16px;}
+
+/* Prevent text size adjustment on orientation change. */
+html { -webkit-text-size-adjust: 100%; }
