@@ -7,7 +7,7 @@ SQL Max is optimized for mobiles and can be used even when you are offline, even
 ### Idea
 
 The original idea of a tool for calculating the SQL Server Max Memory comes from [Vlad Catrinescu](http://about.me/vladcatrinescu), SharePoint MVP, who wrote a very popular whitepaper SQL Server Performance in a SharePoint Environment:
-- [Free Whitepaper: Maximizing SQL 2012 Performance for SharePoint 2013 Whitepaper](http://sharepoint-community.net/profiles/blogs/free-whitepaper-maximizing-sql-2012-performance-for-sharepoint-20)
+- [Free Whitepaper: Maximizing SQL 2012 Performance for SharePoint 2013 Whitepaper](http://spvlad.com/XNkPi2)
 
 Despite of the formula (see below) in the whitepaper, Vlad Catrinescu also provided a tool for calculating max memory, a windows forms application that is freely downlodable at [sqlmem.codeplex.com](http://sqlmem.codeplex.com)
 
