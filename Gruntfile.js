@@ -12,6 +12,7 @@ module.exports = function (grunt) {
   // configurable paths
   var localConfig = {
     app: 'app',
+    spec: 'spec',
     dist: 'dist'
   };
 
@@ -76,8 +77,18 @@ module.exports = function (grunt) {
       compile: {
         files: {
           '<%= local.app %>/scripts/try.js': '<%= local.app %>/scripts/try.coffee', // 1:1 compile
+          '<%= local.spec %>/calculatorSpec.js': '<%= local.spec %>/calculatorSpec.coffee'
         }
       },
+    },
+    jasmine: {
+      pivotal: {
+        src: '<%= local.app %>/**/try.js',
+        options: {
+          specs: '<%= local.spec %>/*Spec.js',
+          helpers: '<%= local.spec %>/*Helper.js'
+        }
+      }
     },
     clean: {
       dist: {

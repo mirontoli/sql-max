@@ -4,6 +4,8 @@ SQL Max, SQL Server Max Memory Calculator, available at ([sqlmax.chuvash.eu](htt
 
 SQL Max is optimized for mobiles and can be used even when you are offline, even though it works perfectly in a desktop browser. 
 
+- [Release Notes](Release.md)
+
 ### Idea
 
 The original idea of a tool for calculating the SQL Server Max Memory comes from [Vlad Catrinescu](http://about.me/vladcatrinescu), SharePoint MVP, who wrote a very popular whitepaper SQL Server Performance in a SharePoint Environment:
