@@ -72,6 +72,13 @@ module.exports = function (grunt) {
         url: 'http://localhost:<%= connect.options.port %>'
       }
     },
+    coffee: {
+      compile: {
+        files: {
+          '<%= local.app %>/scripts/try.js': '<%= local.app %>/scripts/try.coffee', // 1:1 compile
+        }
+      },
+    },
     clean: {
       dist: {
         files: [{
@@ -224,6 +231,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
+    'coffee:compile',
     'useminPrepare',
     'concurrent:dist',
     'concat',
