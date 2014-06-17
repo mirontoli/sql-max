@@ -14,6 +14,7 @@ body {
   color: #555;
   padding: 0;
   margin: 0;
+  background: url(/images/sql-max-background.jpg) repeat-y center 100px;
 }
 
 #suite-bar {
@@ -38,6 +39,7 @@ body {
 .wrapper {
   max-width: 500px;
   margin: 10px auto;
+  padding: 0 10px;
 }
 
 .calculator-inputs {
