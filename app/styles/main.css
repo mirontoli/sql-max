@@ -14,7 +14,7 @@ body {
   color: #555;
   padding: 0;
   margin: 0;
-  background: url(/images/sql-max-background.jpg) repeat-y center 100px;
+  /*background: url(/images/sql-max-background.jpg) repeat-y center 100px;*/
 }
 
 #suite-bar {
@@ -32,8 +32,10 @@ body {
 }
 
 .page-title {
-  font-size: 12px;
   display: inline-block;
+}
+.page-title h1 {
+  font-size: 16px;
 }
 
 .wrapper {
