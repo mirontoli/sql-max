@@ -1,6 +1,6 @@
 # SQL Server Max Memory Calculator
 
-SQL Max, SQL Server Max Memory Calculator, available at ([sqlmax.chuvash.eu](http://sqlmax.chuvash.eu)), is a simple, nevertheless, a very powerful web application for calculating max memory for SQL Server. If you don't set the max memory, the SQL Server will occupy almost all of your server's RAM. 
+SQL Max, SQL Server Max Memory Calculator, available at ([sqlmax.chuvash.eu](https://sqlmax.chuvash.eu)), is a simple, nevertheless, a very powerful web application for calculating max memory for SQL Server. If you don't set the max memory, the SQL Server will occupy almost all of your server's RAM. 
 
 SQL Max is optimized for mobiles and can be used even when you are offline, even though it works perfectly in a desktop browser. 
 
